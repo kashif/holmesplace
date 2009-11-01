@@ -1,9 +1,8 @@
 set :application, "holmesplace"
-set :repository,  "git@github.com:kashif/holmesplace.git"
+set :repository,  "git://github.com/kashif/holmesplace.git"
 set :deploy_to,   "/data/kashif/#{application}"
 
 set :scm,   :git
-set :user,  "kashif"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "nomad-labs.dyndns.org"                          # Your HTTP server, Apache/etc
