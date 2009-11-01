@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/rails_jqtouch"]
+	path = vendor/plugins/rails_jqtouch
+	url = git://github.com/rrodrigu3z/rails_jqtouch.git

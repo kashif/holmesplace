@@ -4,6 +4,7 @@ set :deploy_to,   "/data/kashif/#{application}"
 
 set :scm,   :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :git_enable_submodules,1
 
 role :web, "nomad-labs.dyndns.org"                          # Your HTTP server, Apache/etc
 role :app, "nomad-labs.dyndns.org"                          # This may be the same as your `Web` server
