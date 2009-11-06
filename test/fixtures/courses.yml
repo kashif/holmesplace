@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  angebot_id: 1
+  start: 2009-11-06 19:03:28
+  end: 2009-11-06 19:03:28
+  day: 2009-11-06 19:03:28
+
+two:
+  angebot_id: 1
+  start: 2009-11-06 19:03:28
+  end: 2009-11-06 19:03:28
+  day: 2009-11-06 19:03:28
