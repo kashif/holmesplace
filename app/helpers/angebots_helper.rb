@@ -1,0 +1,2 @@
+module AngebotsHelper
+end
