@@ -1,0 +1,11 @@
+<% mobile_page 'home', :selected => true do %>
+	<% mobile_toolbar Date.today.strftime('%A') do %>
+    <%= mobile_button_to "About", '#about', :effect => 'slideup' %>
+	<% end %>
+	
+  <ul class="rounded">
+  <% for course in @courses %>
+    <li><%= h(course.start.strftime('%H:%M'))%>-<%= h(course.end.strftime('%H:%M'))%> <%= h(course.angebot.name) %></li>
+  <% end %>
+  </ul>
+<% end %>

@@ -4,6 +4,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :courses
 
   map.resources :angebots
+  
+  map.connect '/:number', :controller => 'time_table', :action => 'show'
+  
+  map.root :controller => "time_table", :action => "index"
 
   # The priority is based upon order of creation: first created -> highest priority.
 
