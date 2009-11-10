@@ -3,9 +3,31 @@
     <%= mobile_button_to "About", '#about', :effect => 'slideup' %>
 	<% end %>
 	
-  <ul class="rounded">
+  <ul class="edgetoedge">
   <% for course in @courses %>
-    <li><%= h(course.start.strftime('%H:%M'))%>-<%= h(course.end.strftime('%H:%M'))%> <%= h(course.angebot.name) %></li>
+    <li><%= h(course.start.strftime('%H:%M'))%>-<%= h(course.end.strftime('%H:%M'))%>  <%= h(course.location.name) %> <a href="#angebot<%=course.angebot.id%>"> <%= h(course.angebot.name) %></a></li>
   <% end %>
   </ul>
 <% end %>
+<% for course in @courses %>
+<div id="angebot<%=course.angebot.id%>">
+            <div class="toolbar">
+                <h1>Kursinfo</h1>
+                <a class="back" href="#home"><%= Date.today.strftime('%A')%></a>
+            </div>
+            
+            <%= content_tag(:h1, course.angebot.name) %>
+          	<%= content_tag(:h2, simple_format(course.angebot.description)) %>
+</div>
+<% end %>
+
+<div id="about" class="selectable">
+                <p><img src="images/holmesplace.png" /></p>
+                <p><strong>Holmes Place</strong><br />Version 0.1 beta<br />
+                <p>nomad graphics 2009</p>
+                <p><br /><br /><a href="#home" class="grayButton goback">Close</a></p>
+        </div>
+
+
+
+

@@ -2,12 +2,12 @@
          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Rails JQTouch</title>
+    <title>Holmes Place</title>
     
     <%= stylesheet_link_tag "jqtouch" %>
     <%= stylesheet_link_tag "themes/apple/theme" %>
     <%= javascript_include_tag "jquery.1.3.2.min", "jqtouch" %> 
-    <%= jqtouch_init :status_bar => 'black-translucent' %>
+    <%= jqtouch_init :status_bar => 'black-translucent', :icon => 'images/holmesplace.png'%>
 </head>
 <body>
   <%= yield %>

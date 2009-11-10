@@ -679,3 +679,16 @@ ul.individual li a:hover {
     border-top: 1px solid rgba(76, 86, 108, .3);
     font-weight: bold;
 }
+
+#about {
+                padding: 100px 10px 40px;
+                font-size: 13px;
+                text-align: center;
+            }
+            #about p {
+                margin-bottom: 8px;
+            }
+            #about a {
+                font-weight: bold;
+                text-decoration: none;
+            }
