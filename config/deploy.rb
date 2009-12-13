@@ -1,6 +1,7 @@
 set :application, "holmesplace"
-set :repository,  "git://github.com/kashif/holmesplace.git"
+set :repository,  "git@github.com:kashif/holmesplace.git"
 set :deploy_to,   "/data/kashif/#{application}"
+ssh_options[:forward_agent] = true
 
 set :scm,   :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
