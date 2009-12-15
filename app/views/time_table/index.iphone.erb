@@ -5,7 +5,7 @@
 	
   <ul class="edgetoedge">
   <% for course in @courses %>
-    <li><%= h(course.start.strftime('%H:%M'))%>-<%= h(course.end.strftime('%H:%M'))%>  <%= h(course.location.name) %> <a href="#angebot<%=course.angebot.id%>"> <%= h(course.angebot.name) %></a></li>
+    <li><a href="#angebot<%=course.angebot.id%>"> <%= h(course.start.strftime('%H:%M'))%>-<%= h(course.end.strftime('%H:%M'))%>  <%= h(course.location.name) %> <br> <%= h(course.angebot.name) %></a></li>
   <% end %>
   </ul>
 <% end %>
